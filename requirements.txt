@@ -1,0 +1,15 @@
+accelerate
+wandb
+datasets
+numpy
+evaluate
+transformers
+scipy
+scikit-learn
+python-dotenv
+gpustat
+rich
+textattack
+tensorflow_hub
+OpenAttack
+openai
