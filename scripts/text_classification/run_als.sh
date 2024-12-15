@@ -19,7 +19,7 @@ export PYTHON_PATH=${PYTHON_PATH:-"/path/to/python_executable"}
 for DATASET_NAME in "${DATASET_NAMES[@]}"; do
 
     MODEL_NAME_WITHOUT_ORG=$(echo "$MODEL_NAME" | cut -d '/' -f 2)
-    OUTPUT_DIR=$ROOT_DIR/$MODEL_NAME_WITHOUT_ORG/$DATASET_NAME/$DEFENCE_METHOD/$EXP_NAME
+    OUTPUT_DIR=$OUTPUT_DIR/$MODEL_NAME_WITHOUT_ORG/$DATASET_NAME/$DEFENCE_METHOD/$EXP_NAME
 
     CUDA_VISIBLE_DEVICES=$DEVICE $PYTHON_PATH $PWD/scripts/text_classification/run_als.py \
         --model_name_or_path $MODEL_NAME \
