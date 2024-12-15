@@ -46,6 +46,7 @@ MODEL_TYPES = tuple(conf.model_type for conf in MODEL_CONFIG_CLASSES)
 
 TASK_NAME_MAP = {
     "siqa": "extraordinarylab/siqa", 
+    "csqa": "extraordinarylab/csqa", 
     "comve": "extraordinarylab/comve_taskb", 
     "winogrande": "extraordinarylab/winogrande", 
 }
